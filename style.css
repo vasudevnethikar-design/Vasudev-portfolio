@@ -1101,29 +1101,311 @@ footer{
 
 }
 
-/* RESPONSIVE */
+/* ================================================= */
+/* RESPONSIVE DESIGN */
+/* ================================================= */
 
 @media(max-width:900px){
 
- /* MOBILE SKILLS FIX */
+  body{
 
-@media(max-width:900px){
+    overflow-x:hidden;
+
+  }
+
+  section{
+
+    padding:80px 6%;
+
+  }
+
+  /* ========================= */
+  /* NAVBAR */
+  /* ========================= */
+
+  nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px 5%;
+
+  }
+
+  .logo{
+
+    font-size:40px;
+
+    text-align:center;
+
+  }
+
+  nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+  }
+
+  nav ul li a{
+
+    font-size:16px;
+
+  }
+
+  /* ========================= */
+  /* HERO SECTION */
+  /* ========================= */
+
+  .hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
+    padding-top:180px;
+
+  }
+
+  .hero-text h1{
+
+    font-size:42px;
+
+    line-height:1.2;
+
+  }
+
+  .typing{
+
+    font-size:20px;
+
+  }
+
+  .hero-text p{
+
+    font-size:15px;
+
+    line-height:1.9;
+
+  }
+
+  .hero-buttons{
+
+    justify-content:center;
+
+  }
+
+  /* HERO IMAGE FIX */
+
+  .hero-image img{
+
+    width:220px;
+
+    height:220px;
+
+    border:5px solid #38bdf8;
+
+    padding:6px;
+
+  }
+
+  /* ========================= */
+  /* ABOUT SECTION */
+  /* ========================= */
+
+  .about-container{
+
+    flex-direction:column;
+
+    gap:40px;
+
+  }
+
+  /* ABOUT IMAGE */
+
+  .about-image img{
+
+    width:230px;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+  }
+
+  .about-text{
+
+    text-align:center;
+
+  }
+
+  .about-text h3{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+  }
+
+  .about-text p{
+
+    font-size:15px;
+
+    line-height:2;
+
+  }
+
+  /* ========================= */
+  /* EDUCATION SECTION */
+  /* ========================= */
+
+  .journey-road{
+
+    padding:40px 0;
+
+  }
+
+  /* ROAD LINE */
+
+  .journey-road::before{
+
+    left:22px;
+
+    width:4px;
+
+    background:
+    repeating-linear-gradient(
+      to bottom,
+      #38bdf8 0px,
+      #38bdf8 12px,
+      transparent 12px,
+      transparent 24px
+    );
+
+  }
+
+  /* ITEMS */
+
+  .journey-item{
+
+    width:100%;
+
+    left:0 !important;
+
+    padding-left:70px !important;
+
+    padding-right:0 !important;
+
+    margin:50px 0;
+
+  }
+
+  /* REMOVE OLD CURVES */
+
+  .journey-item.left::before,
+  .journey-item.right::before{
+
+    content:'';
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    width:35px;
+
+    height:35px;
+
+    border-top:4px dashed #38bdf8;
+
+    border-left:4px dashed #38bdf8;
+
+    border-right:none;
+
+    border-bottom:none;
+
+    border-radius:35px 0 0 0;
+
+    transform:
+    translateY(-50%)
+    rotate(-45deg);
+
+  }
+
+  /* DOT */
+
+  .location-dot{
+
+    left:14px !important;
+
+    width:16px;
+
+    height:16px;
+
+  }
+
+  /* CARDS */
+
+  .journey-card{
+
+    padding:22px;
+
+    border-radius:18px;
+
+  }
+
+  .journey-card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+  }
+
+  .journey-card p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+  }
+
+  /* ========================= */
+  /* SKILLS SECTION */
+  /* ========================= */
 
   .neural-network{
 
-    padding:60px 10px;
+    padding:40px 0;
+
+    position:relative;
 
   }
 
   /* BRAIN */
 
+  .brain-area{
+
+    margin-bottom:50px;
+
+  }
+
   .brain-circle{
 
-    width:140px;
+    width:130px;
 
-    height:140px;
+    height:130px;
 
-    font-size:65px;
+    font-size:55px;
 
   }
 
@@ -1131,51 +1413,66 @@ footer{
 
     font-size:22px;
 
-    letter-spacing:2px;
+    margin-top:15px;
 
   }
 
-  /* SKILLS LAYOUT */
+  /* SKILLS ROW */
 
   .skills-row{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:1fr 1fr;
+    flex-wrap:wrap;
 
-    gap:40px 20px;
+    justify-content:center;
 
-    width:100%;
+    align-items:flex-start;
 
-    margin-bottom:40px;
+    gap:25px 15px;
+
+    margin-bottom:25px;
 
   }
 
-  /* WRAPPER */
+  /* SKILL BOX */
 
   .skill-wrapper{
 
-    width:100%;
+    width:45%;
+
+    display:flex;
+
+    flex-direction:column;
 
     align-items:center;
 
+    position:relative;
+
   }
 
-  /* LINE */
+  /* CONNECTION LINE */
 
   .line{
 
     width:2px;
 
-    height:45px;
+    height:40px;
 
-    margin-bottom:12px;
+    margin-bottom:10px;
+
+    background:
+    linear-gradient(
+      to bottom,
+      #38bdf8,
+      transparent
+    );
 
   }
 
   .small-line{
 
-    height:35px;
+    height:28px;
 
   }
 
@@ -1185,21 +1482,75 @@ footer{
 
     width:100%;
 
-    max-width:150px;
+    padding:12px 8px;
 
     text-align:center;
 
-    padding:12px 10px;
-
     font-size:14px;
+
+    border-radius:40px;
 
   }
 
-  /* REMOVE OVERFLOW */
+  /* ========================= */
+  /* PROJECTS */
+  /* ========================= */
 
-  body{
+  .projects-container{
 
-    overflow-x:hidden;
+    grid-template-columns:1fr;
+
+  }
+
+  .project-card img{
+
+    height:200px;
+
+  }
+
+  /* ========================= */
+  /* CERTIFICATES */
+  /* ========================= */
+
+  .certificate-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .certificate-card{
+
+    padding:25px;
+
+  }
+
+  /* ========================= */
+  /* CONTACT */
+  /* ========================= */
+
+  .contact-container{
+
+    flex-direction:column;
+
+    gap:40px;
+
+  }
+
+  .contact-form{
+
+    width:100%;
+
+  }
+
+  /* ========================= */
+  /* FOOTER */
+  /* ========================= */
+
+  footer{
+
+    font-size:14px;
+
+    padding:20px;
 
   }
 
