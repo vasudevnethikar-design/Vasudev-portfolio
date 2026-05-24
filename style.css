@@ -680,103 +680,98 @@ footer{
   }
 }
 
-/* ================================================= */
-/* MOBILE RESPONSIVE */
-/* ================================================= */
+/* ========================= */
+/* MOBILE SKILLS SECTION */
+/* ========================= */
 
-@media(max-width:900px){
+/* HIDE DESKTOP BRAIN */
 
-  section{
-    padding:80px 6%;
-  }
+.brain-core{
 
-  /* NAVBAR */
-
-  nav{
-    flex-direction:column;
-    gap:20px;
-    padding:20px 5%;
-  }
-
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-
-  /* HERO */
-
-  .hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding-top:180px;
-  }
-
-  .hero-text h1{
-    font-size:42px;
-  }
-
-  .hero-image img{
-    width:220px;
-    height:220px;
-  }
-
-  /* ABOUT */
-
-  .about-top{
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .about-image img{
-    width:240px;
-    height:280px;
-  }
-
-  /* EDUCATION */
-
-  .journey-road::before{
-    left:20px;
-  }
-
-  .journey-item{
-    width:100%;
-    left:0 !important;
-    padding-left:70px !important;
-    padding-right:0 !important;
-  }
-
-  .journey-item.left::before,
-  .journey-item.right::before{
-    left:0;
-    width:50px;
-    height:50px;
-
-    border-right:none;
-    border-bottom:none;
-    border-left:6px dashed #38bdf8;
-    border-top:6px dashed #38bdf8;
-
-    border-radius:50px 0 0 0;
-  }
-
- 
-
-  /* PROJECTS */
-
-  .projects-container{
-    grid-template-columns:1fr;
-  }
-
-  /* CERTIFICATES */
-
-  .certificate-container{
-    grid-template-columns:1fr;
-  }
-
-  /* CONTACT */
-
-  .contact-container{
-    flex-direction:column;
-  }
+  display:none;
 
 }
+
+/* REMOVE ABSOLUTE LAYOUT */
+
+.brain-container{
+
+  height:auto;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:18px;
+
+  padding:20px 0;
+
+}
+
+/* REMOVE DESKTOP POSITIONS */
+
+.skill-node{
+
+  position:relative;
+
+  top:auto !important;
+  left:auto !important;
+  right:auto !important;
+  bottom:auto !important;
+
+  width:100%;
+
+  max-width:170px;
+
+  padding:14px 18px;
+
+  text-align:center;
+
+  font-size:14px;
+
+  border-radius:40px;
+
+  background:#0f172a;
+
+  border:2px solid #38bdf8;
+
+  color:white;
+
+  font-weight:600;
+
+  animation:none;
+
+  margin:0;
+
+  box-shadow:
+    0 0 15px rgba(56,189,248,0.25);
+
+}
+
+/* REMOVE CONNECTION LINES */
+
+.skill-node::before{
+
+  display:none;
+
+}
+
+/* HOVER */
+
+.skill-node:hover{
+
+  transform:translateY(-5px);
+
+  background:#38bdf8;
+
+  color:black;
+
+  box-shadow:
+    0 0 20px #38bdf8;
+
+}
+
