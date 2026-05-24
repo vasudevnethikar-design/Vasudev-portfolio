@@ -1105,38 +1105,82 @@ footer{
 
 @media(max-width:900px){
 
-  nav{
-    flex-direction:column;
-    gap:15px;
+ /* MOBILE EDUCATION FIX */
+
+@media(max-width:900px){
+
+  .journey-road::before{
+
+    left:35px;
+
+    width:5px;
+
   }
 
-  nav ul{
-    flex-wrap:wrap;
-    justify-content:center;
+  .journey-item{
+
+    width:100%;
+
+    padding-left:90px !important;
+
+    padding-right:20px !important;
+
+    left:0 !important;
+
+    margin:60px 0;
+
   }
 
-  .hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding-top:150px;
+  /* CURVE FIX */
+
+  .journey-item.left::before,
+  .journey-item.right::before{
+
+    left:30px;
+
+    top:50%;
+
+    width:45px;
+
+    height:45px;
+
+    border-top:5px dashed #38bdf8;
+
+    border-left:5px dashed #38bdf8;
+
+    border-right:none;
+
+    border-bottom:none;
+
+    border-radius:45px 0 0 0;
+
+    transform:translateY(-50%) rotate(-45deg);
+
   }
 
-  .hero-text h1{
-    font-size:45px;
+  /* DOT ALIGNMENT */
+
+  .location-dot{
+
+    left:25px !important;
+
+    width:18px;
+
+    height:18px;
+
   }
 
-  .hero-text p{
-    margin:auto;
-    margin-bottom:30px;
+  .journey-card{
+
+    padding:25px;
+
   }
 
-  .hero-buttons{
-    justify-content:center;
+  .journey-card h3{
+
+    font-size:22px;
+
   }
 
-  .hero-image img{
-    width:280px;
-    height:280px;
-  }
-
+}
 }
