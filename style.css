@@ -759,26 +759,7 @@ footer{
     border-radius:50px 0 0 0;
   }
 
-  /* SKILLS */
-
-  .brain-area{
-    display:none;
-  }
-
-  .brain-container{
-    height:auto;
-    padding:20px 0;
-  }
-
-  .skill-node{
-    position:relative;
-    display:inline-block;
-    margin:10px;
-  }
-
-  .skill-node::before{
-    display:none;
-  }
+ 
 
   /* PROJECTS */
 
