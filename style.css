@@ -12,7 +12,9 @@ body{
   overflow-x:hidden;
 }
 
+/* ========================= */
 /* SECTION */
+/* ========================= */
 
 section{
   padding:100px 10%;
@@ -25,7 +27,9 @@ section{
   color:#38bdf8;
 }
 
+/* ========================= */
 /* LOADER */
+/* ========================= */
 
 #loader{
   position:fixed;
@@ -67,7 +71,9 @@ section{
   }
 }
 
+/* ========================= */
 /* NAVBAR */
+/* ========================= */
 
 nav{
   position:fixed;
@@ -84,9 +90,12 @@ nav{
 }
 
 .logo{
-  font-size:28px;
+  font-size:32px;
   font-weight:700;
   color:#38bdf8;
+  text-shadow:
+    0 0 10px #38bdf8,
+    0 0 25px rgba(56,189,248,0.7);
 }
 
 nav ul{
@@ -105,7 +114,9 @@ nav ul li a:hover{
   color:#38bdf8;
 }
 
+/* ========================= */
 /* HERO SECTION */
+/* ========================= */
 
 .hero{
   min-height:100vh;
@@ -114,7 +125,8 @@ nav ul li a:hover{
   align-items:center;
   gap:50px;
   flex-wrap:wrap;
-  background:radial-gradient(circle at top right,#0f172a,#020617);
+  background:
+  radial-gradient(circle at top right,#0f172a,#020617);
 }
 
 .hero-text{
@@ -122,8 +134,13 @@ nav ul li a:hover{
 }
 
 .hero-text h1{
-  font-size:60px;
+  font-size:65px;
   margin-bottom:20px;
+  color:white;
+
+  text-shadow:
+    0 0 15px #38bdf8,
+    0 0 30px rgba(56,189,248,0.5);
 }
 
 .typing{
@@ -134,10 +151,10 @@ nav ul li a:hover{
 }
 
 .hero-text p{
-  line-height:1.8;
+  line-height:1.9;
   color:#cbd5e1;
   margin-bottom:30px;
-  max-width:600px;
+  max-width:650px;
 }
 
 .hero-buttons{
@@ -158,7 +175,8 @@ nav ul li a:hover{
 
 .btn:hover{
   transform:translateY(-5px);
-  box-shadow:0 10px 20px rgba(56,189,248,0.4);
+  box-shadow:
+    0 10px 20px rgba(56,189,248,0.4);
 }
 
 /* HERO IMAGE */
@@ -173,16 +191,11 @@ nav ul li a:hover{
 .hero-image img{
   width:380px;
   height:380px;
-
   border-radius:50%;
-
   object-fit:cover;
   object-position:center top;
-
   border:6px solid #38bdf8;
-
   padding:8px;
-
   background:#0f172a;
 
   box-shadow:
@@ -190,23 +203,20 @@ nav ul li a:hover{
     0 0 50px rgba(56,189,248,0.5);
 
   animation:floatImage 4s ease-in-out infinite;
-
   transition:0.5s;
 }
 
 .hero-image img:hover{
-
   transform:scale(1.05);
 
   box-shadow:
     0 0 35px #38bdf8,
     0 0 70px rgba(56,189,248,0.7);
-
 }
 
+/* ========================= */
 /* ABOUT */
-
-/* ABOUT SECTION */
+/* ========================= */
 
 .about-top{
   display:flex;
@@ -219,16 +229,11 @@ nav ul li a:hover{
 .about-image img{
   width:320px;
   height:320px;
-
   object-fit:cover;
   object-position:center top;
-
   border-radius:20px;
-
   border:2px solid #38bdf8;
-
   padding:5px;
-
   background:#0f172a;
 
   box-shadow:
@@ -238,12 +243,10 @@ nav ul li a:hover{
 }
 
 .about-image img:hover{
-
   transform:scale(1.03);
 
   box-shadow:
     0 0 25px rgba(56,189,248,0.7);
-
 }
 
 .about-side-text{
@@ -251,52 +254,34 @@ nav ul li a:hover{
   min-width:300px;
 }
 
-.about-side-text p{
-  line-height:2;
-  color:#cbd5e1;
-  margin-bottom:20px;
-}
-
+.about-side-text p,
 .about-full-text p{
   line-height:2;
   color:#cbd5e1;
-  margin-bottom:25px;
+  margin-bottom:20px;
   text-align:justify;
 }
 
+/* ========================= */
 /* EDUCATION */
-/* EDUCATION JOURNEY ROADMAP */
+/* ========================= */
 
 .journey-road{
-
   position:relative;
-
   width:100%;
-
   max-width:1200px;
-
   margin:auto;
-
   padding:80px 0;
-
 }
 
-/* CURVED ROAD */
-
 .journey-road::before{
-
   content:'';
-
   position:absolute;
-
   left:50%;
-
   top:0;
-
   width:6px;
-
   height:100%;
-
+  transform:translateX(-50%);
   border-radius:50px;
 
   background:
@@ -307,259 +292,113 @@ nav ul li a:hover{
     transparent 15px,
     transparent 30px
   );
-
-  transform:translateX(-50%);
-
-  opacity:0.8;
-
 }
-
-/* JOURNEY ITEMS */
 
 .journey-item{
-
   position:relative;
-
   width:50%;
-
   margin:80px 0;
-
 }
-
-/* LEFT SIDE */
 
 .journey-item.left{
-
   left:0;
-
   padding-right:80px;
-
 }
-
-/* RIGHT SIDE */
 
 .journey-item.right{
-
   left:50%;
-
   padding-left:80px;
-
 }
 
-/* ROAD CURVES */
-
 .journey-item.left::before{
-
   content:'';
-
   position:absolute;
-
   right:-3px;
-
   top:50%;
-
   width:80px;
-
   height:80px;
 
   border:6px dashed #38bdf8;
-
   border-left:none;
-
   border-bottom:none;
 
   border-radius:0 80px 0 0;
-
 }
 
 .journey-item.right::before{
-
   content:'';
-
   position:absolute;
-
   left:-3px;
-
   top:50%;
-
   width:80px;
-
   height:80px;
 
   border:6px dashed #38bdf8;
-
   border-right:none;
-
   border-bottom:none;
 
   border-radius:80px 0 0 0;
-
 }
 
-
-
-
-/* CARD */
-
 .journey-card{
-
   background:#0f172a;
-
   padding:30px;
-
   border-radius:20px;
-
   border:1px solid #1e293b;
-
   transition:0.5s;
-
 }
 
 .journey-card:hover{
-
   transform:translateY(-10px);
 
   border-color:#38bdf8;
 
   box-shadow:
     0 0 25px rgba(56,189,248,0.4);
-
 }
 
-/* TEXT */
-
 .journey-card h3{
-
   color:#38bdf8;
-
   margin-bottom:15px;
-
   font-size:24px;
-
 }
 
 .journey-card p{
-
   color:#cbd5e1;
-
   line-height:1.8;
-
-  margin-bottom:15px;
-
 }
 
-.journey-card span{
-
-  color:#94a3b8;
-
-}
-
-/* MOBILE RESPONSIVE */
-
-@media(max-width:900px){
-
-  .journey-road::before{
-
-    left:20px;
-
-  }
-
-  .journey-item{
-
-    width:100%;
-
-    padding-left:70px !important;
-
-    padding-right:0 !important;
-
-    left:0 !important;
-
-  }
-
-  .journey-item.left::before,
-  .journey-item.right::before{
-
-    left:0;
-
-    width:50px;
-
-    height:50px;
-
-    border-right:none;
-
-    border-bottom:none;
-
-    border-left:6px dashed #38bdf8;
-
-    border-top:6px dashed #38bdf8;
-
-    border-radius:50px 0 0 0;
-
-  }
-
-  .location-dot{
-
-    left:8px !important;
-
-  }
-
-}
+/* ========================= */
 /* SKILLS */
-
-/* SKILLS BRAIN NETWORK */
+/* ========================= */
 
 .brain-container{
-
   position:relative;
-
   width:100%;
-
   height:900px;
-
   display:flex;
-
   justify-content:center;
-
   align-items:center;
-
   overflow:hidden;
-
 }
 
-/* CENTER BRAIN */
-
 .brain-core{
-
   position:relative;
-
   z-index:10;
-
   text-align:center;
-
 }
 
 .brain-circle{
-
   width:180px;
-
   height:180px;
-
   border-radius:50%;
-
   display:flex;
-
   justify-content:center;
-
   align-items:center;
-
   font-size:90px;
 
   background:
-  radial-gradient(
-    circle,
-    #38bdf8,
-    #0f172a
-  );
+  radial-gradient(circle,#38bdf8,#0f172a);
 
   box-shadow:
     0 0 30px #38bdf8,
@@ -567,253 +406,100 @@ nav ul li a:hover{
     0 0 100px rgba(56,189,248,0.5);
 
   animation:brainPulse 3s infinite ease-in-out;
-
 }
 
 .brain-core h3{
-
   margin-top:20px;
-
   font-size:28px;
-
   color:#38bdf8;
-
-  letter-spacing:2px;
-
 }
 
-/* SKILL NODES */
-
 .skill-node{
-
   position:absolute;
-
   padding:14px 24px;
-
   background:#0f172a;
-
   border:2px solid #38bdf8;
-
   border-radius:50px;
-
   color:white;
-
   font-weight:600;
 
   box-shadow:
     0 0 15px rgba(56,189,248,0.3);
 
   transition:0.5s;
-
   cursor:pointer;
 
   animation:floating 4s infinite ease-in-out;
-
 }
 
-/* HOVER */
-
 .skill-node:hover{
-
   transform:scale(1.15);
 
   background:#38bdf8;
-
   color:black;
 
   box-shadow:
     0 0 25px #38bdf8,
     0 0 50px rgba(56,189,248,0.8);
-
 }
 
 /* NODE POSITIONS */
 
-.html{
-  top:15%;
-  left:18%;
-}
-
-.css{
-  top:25%;
-  left:8%;
-}
-
-.js{
-  top:15%;
-  right:15%;
-}
-
-.python{
-  top:40%;
-  left:5%;
-}
-
-.java{
-  top:25%;
-  right:5%;
-}
-
-.ai{
-  bottom:39%;
-  left:8%;
-}
-
-.dbms{
-  top:40%;
-  right:3%;
-}
-
-.pandas{
-  bottom:25%;
-  left:18%;
-}
-
-.numpy{
-  bottom:39%;
-  right:4%;
-}
-
-.c{
-  top:69%;
-  right:15%;
-}
-
-
+.html{ top:15%; left:18%; }
+.css{ top:25%; left:8%; }
+.js{ top:15%; right:15%; }
+.python{ top:40%; left:5%; }
+.java{ top:25%; right:5%; }
+.ai{ bottom:39%; left:8%; }
+.dbms{ top:40%; right:3%; }
+.pandas{ bottom:25%; left:18%; }
+.numpy{ bottom:39%; right:4%; }
+.c{ top:69%; right:15%; }
 
 /* CONNECTION LINES */
 
 .skill-node::before{
-
   content:'';
-
   position:absolute;
-
   width:220px;
-
   height:2px;
-
-  /* Remove the global background property from here so we can define direction per side */
-
   top:50%;
-
   z-index:-1;
-
 }
-
-/* LEFT SIDE LINES (Points right, towards the center brain ->) */
 
 .html::before,
 .css::before,
 .python::before,
 .ai::before,
 .pandas::before{
-
   left:100%;
-  
-  background: linear-gradient(
+
+  background:
+  linear-gradient(
     to right,
     rgba(56,189,248,0.8),
     transparent
   );
-
 }
-
-/* RIGHT SIDE LINES (Points left, towards the center brain <-) */
 
 .js::before,
 .java::before,
 .dbms::before,
 .numpy::before,
 .c::before{
-
   right:100%;
-  
-  background: linear-gradient(
+
+  background:
+  linear-gradient(
     to left,
     rgba(56,189,248,0.8),
     transparent
   );
-
 }
 
-
-/* ANIMATIONS */
-
-@keyframes brainPulse{
-
-  0%{
-
-    transform:scale(1);
-
-  }
-
-  50%{
-
-    transform:scale(1.08);
-
-  }
-
-  100%{
-
-    transform:scale(1);
-
-  }
-
-}
-
-@keyframes floating{
-
-  0%{
-
-    transform:translateY(0px);
-
-  }
-
-  50%{
-
-    transform:translateY(-10px);
-
-  }
-
-  100%{
-
-    transform:translateY(0px);
-
-  }
-
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
-
-  .brain-container{
-
-    height:1200px;
-
-  }
-
-  .brain-circle{
-
-    width:130px;
-    height:130px;
-
-    font-size:60px;
-
-  }
-
-  .skill-node{
-
-    font-size:14px;
-
-    padding:10px 18px;
-
-  }
-
-}
-
+/* ========================= */
 /* PROJECTS */
+/* ========================= */
 
 .projects-container{
   display:grid;
@@ -830,7 +516,9 @@ nav ul li a:hover{
 
 .project-card:hover{
   transform:translateY(-10px);
-  box-shadow:0 15px 30px rgba(56,189,248,0.3);
+
+  box-shadow:
+    0 15px 30px rgba(56,189,248,0.3);
 }
 
 .project-card img{
@@ -854,30 +542,18 @@ nav ul li a:hover{
   margin-bottom:20px;
 }
 
-.project-content a{
-  color:#38bdf8;
-  text-decoration:none;
-}
-/* CERTIFICATES*/
-
-/* CERTIFICATE SECTION */
+/* ========================= */
+/* CERTIFICATES */
+/* ========================= */
 
 .certificate-container{
-
   display:grid;
-
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-
   gap:30px;
-
 }
 
-/* CARD */
-
 .certificate-card{
-
   position:relative;
-
   overflow:hidden;
 
   background:
@@ -888,136 +564,25 @@ nav ul li a:hover{
   );
 
   border-radius:25px;
-
   padding:35px;
-
   border:1px solid #1e293b;
-
   transition:0.5s;
-
-  cursor:pointer;
-
 }
 
-/* HOVER */
-
 .certificate-card:hover{
-
   transform:
-  translateY(-12px)
-  scale(1.02);
+    translateY(-12px)
+    scale(1.02);
 
   border-color:#38bdf8;
 
   box-shadow:
     0 0 30px rgba(56,189,248,0.35);
-
 }
 
-/* NUMBER */
-
-.certificate-number{
-
-  position:absolute;
-
-  top:-10px;
-
-  right:20px;
-
-  font-size:80px;
-
-  font-weight:700;
-
-  color:rgba(56,189,248,0.08);
-
-}
-
-/* CONTENT */
-
-.certificate-content{
-
-  position:relative;
-
-  z-index:2;
-
-}
-
-.certificate-content h3{
-
-  color:#38bdf8;
-
-  margin-bottom:18px;
-
-  font-size:24px;
-
-}
-
-.certificate-content p{
-
-  color:#cbd5e1;
-
-  line-height:1.9;
-
-  margin-bottom:20px;
-
-}
-
-.certificate-content span{
-
-  display:inline-block;
-
-  padding:8px 18px;
-
-  background:rgba(56,189,248,0.15);
-
-  color:#38bdf8;
-
-  border-radius:30px;
-
-  font-size:14px;
-
-  border:1px solid rgba(56,189,248,0.3);
-
-}
-
-/* GLOW EFFECT */
-
-.certificate-card::before{
-
-  content:'';
-
-  position:absolute;
-
-  top:-50%;
-
-  left:-50%;
-
-  width:200%;
-
-  height:200%;
-
-  background:
-  radial-gradient(
-    circle,
-    rgba(56,189,248,0.12),
-    transparent 60%
-  );
-
-  transform:rotate(25deg);
-
-  opacity:0;
-
-  transition:0.5s;
-
-}
-
-.certificate-card:hover::before{
-
-  opacity:1;
-
-}
-
+/* ========================= */
 /* CONTACT */
+/* ========================= */
 
 .contact-container{
   display:flex;
@@ -1028,17 +593,6 @@ nav ul li a:hover{
 
 .contact-info{
   flex:1;
-}
-
-.contact-info h3{
-  font-size:30px;
-  color:#38bdf8;
-  margin-bottom:20px;
-}
-
-.contact-info p{
-  margin-bottom:15px;
-  color:#cbd5e1;
 }
 
 .contact-form{
@@ -1067,14 +621,11 @@ nav ul li a:hover{
   border-radius:10px;
   font-weight:600;
   cursor:pointer;
-  transition:0.4s;
 }
 
-.contact-form button:hover{
-  background:white;
-}
-
+/* ========================= */
 /* FOOTER */
+/* ========================= */
 
 footer{
   text-align:center;
@@ -1083,10 +634,11 @@ footer{
   color:#94a3b8;
 }
 
-/* FLOAT ANIMATION */
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
 
 @keyframes floatImage{
-
   0%{
     transform:translateY(0px);
   }
@@ -1098,534 +650,152 @@ footer{
   100%{
     transform:translateY(0px);
   }
+}
 
+@keyframes brainPulse{
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.08);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+}
+
+@keyframes floating{
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
 }
 
 /* ================================================= */
-/* RESPONSIVE DESIGN */
+/* MOBILE RESPONSIVE */
 /* ================================================= */
 
 @media(max-width:900px){
 
-  body{
-
-    overflow-x:hidden;
-
-  }
-
   section{
-
     padding:80px 6%;
-
   }
 
-  /* ========================= */
   /* NAVBAR */
-  /* ========================= */
 
   nav{
-
     flex-direction:column;
-
     gap:20px;
-
     padding:20px 5%;
-
-  }
-
-  .logo{
-
-    font-size:40px;
-
-    text-align:center;
-
   }
 
   nav ul{
-
     flex-wrap:wrap;
-
     justify-content:center;
-
-    gap:20px;
-
   }
 
-  nav ul li a{
-
-    font-size:16px;
-
-  }
-
-  /* ========================= */
-  /* HERO SECTION */
-  /* ========================= */
+  /* HERO */
 
   .hero{
-
     flex-direction:column-reverse;
-
     text-align:center;
-
-    gap:40px;
-
     padding-top:180px;
-
   }
 
   .hero-text h1{
-
     font-size:42px;
-
-    line-height:1.2;
-
   }
-
-  .typing{
-
-    font-size:20px;
-
-  }
-
-  .hero-text p{
-
-    font-size:15px;
-
-    line-height:1.9;
-
-  }
-
-  .hero-buttons{
-
-    justify-content:center;
-
-  }
-
-  /* HERO IMAGE FIX */
 
   .hero-image img{
-
     width:220px;
-
     height:220px;
-
-    border:5px solid #38bdf8;
-
-    padding:6px;
-
   }
 
-  /* ========================= */
-  /* ABOUT SECTION */
-  /* ========================= */
+  /* ABOUT */
 
-  .about-container{
-
+  .about-top{
     flex-direction:column;
-
-    gap:40px;
-
+    align-items:center;
   }
-
-  /* ABOUT IMAGE */
 
   .about-image img{
-
-    width:230px;
-
+    width:240px;
     height:280px;
-
-    object-fit:cover;
-
-    border-radius:20px;
-
   }
 
-  .about-text{
-
-    text-align:center;
-
-  }
-
-  .about-text h3{
-
-    font-size:30px;
-
-    margin-bottom:20px;
-
-  }
-
-  .about-text p{
-
-    font-size:15px;
-
-    line-height:2;
-
-  }
-
-  /* ========================= */
-  /* EDUCATION SECTION */
-  /* ========================= */
-
-  .journey-road{
-
-    padding:40px 0;
-
-  }
-
-  /* ROAD LINE */
+  /* EDUCATION */
 
   .journey-road::before{
-
-    left:22px;
-
-    width:4px;
-
-    background:
-    repeating-linear-gradient(
-      to bottom,
-      #38bdf8 0px,
-      #38bdf8 12px,
-      transparent 12px,
-      transparent 24px
-    );
-
+    left:20px;
   }
-
-  /* ITEMS */
 
   .journey-item{
-
     width:100%;
-
     left:0 !important;
-
     padding-left:70px !important;
-
     padding-right:0 !important;
-
-    margin:50px 0;
-
   }
-
-  /* REMOVE OLD CURVES */
 
   .journey-item.left::before,
   .journey-item.right::before{
-
-    content:'';
-
-    position:absolute;
-
-    left:18px;
-
-    top:50%;
-
-    width:35px;
-
-    height:35px;
-
-    border-top:4px dashed #38bdf8;
-
-    border-left:4px dashed #38bdf8;
+    left:0;
+    width:50px;
+    height:50px;
 
     border-right:none;
-
     border-bottom:none;
+    border-left:6px dashed #38bdf8;
+    border-top:6px dashed #38bdf8;
 
-    border-radius:35px 0 0 0;
-
-    transform:
-    translateY(-50%)
-    rotate(-45deg);
-
+    border-radius:50px 0 0 0;
   }
 
-  /* DOT */
-
-  .location-dot{
-
-    left:14px !important;
-
-    width:16px;
-
-    height:16px;
-
-  }
-
-  /* CARDS */
-
-  .journey-card{
-
-    padding:22px;
-
-    border-radius:18px;
-
-  }
-
-  .journey-card h3{
-
-    font-size:24px;
-
-    margin-bottom:15px;
-
-  }
-
-  .journey-card p{
-
-    font-size:15px;
-
-    line-height:1.8;
-
-  }
-
-  /* ========================= */
-  /* SKILLS SECTION */
-  /* ========================= */
-
-  .neural-network{
-
-    padding:40px 0;
-
-    position:relative;
-
-  }
-
-  /* BRAIN */
+  /* SKILLS */
 
   .brain-area{
-
-    margin-bottom:50px;
-
+    display:none;
   }
 
-  .brain-circle{
-
-    width:130px;
-
-    height:130px;
-
-    font-size:55px;
-
+  .brain-container{
+    height:auto;
+    padding:20px 0;
   }
-
-  .brain-area h3{
-
-    font-size:22px;
-
-    margin-top:15px;
-
-  }
-
-  /* SKILLS ROW */
-
-  .skills-row{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    align-items:flex-start;
-
-    gap:25px 15px;
-
-    margin-bottom:25px;
-
-  }
-
-  /* SKILL BOX */
-
-  .skill-wrapper{
-
-    width:45%;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    position:relative;
-
-  }
-
-  /* CONNECTION LINE */
-
-  .line{
-
-    width:2px;
-
-    height:40px;
-
-    margin-bottom:10px;
-
-    background:
-    linear-gradient(
-      to bottom,
-      #38bdf8,
-      transparent
-    );
-
-  }
-
-  .small-line{
-
-    height:28px;
-
-  }
-
-  /* NODE */
 
   .skill-node{
-
-    width:100%;
-
-    padding:12px 8px;
-
-    text-align:center;
-
-    font-size:14px;
-
-    border-radius:40px;
-
+    position:relative;
+    display:inline-block;
+    margin:10px;
   }
 
-  /* ========================= */
+  .skill-node::before{
+    display:none;
+  }
+
   /* PROJECTS */
-  /* ========================= */
 
   .projects-container{
-
     grid-template-columns:1fr;
-
   }
 
-  .project-card img{
-
-    height:200px;
-
-  }
-
-  /* ========================= */
   /* CERTIFICATES */
-  /* ========================= */
 
   .certificate-container{
-
     grid-template-columns:1fr;
-
   }
 
-  .certificate-card{
-
-    padding:25px;
-
-  }
-
-  /* ========================= */
   /* CONTACT */
-  /* ========================= */
 
   .contact-container{
-
     flex-direction:column;
-
-    gap:40px;
-
   }
 
-  .contact-form{
-
-    width:100%;
-
-  }
-
-  /* ========================= */
-  /* FOOTER */
-  /* ========================= */
-
-  footer{
-
-    font-size:14px;
-
-    padding:20px;
-
-  }
-  /* ================================= */
-/* MOBILE SKILLS SIMPLE VIEW */
-/* ================================= */
-
-.brain-area{
-
-  display:none;
-
-}
-
-/* SIMPLE GRID */
-
-.skills-row{
-
-  display:grid;
-
-  grid-template-columns:1fr 1fr;
-
-  gap:25px 15px;
-
-  width:100%;
-
-  margin-bottom:20px;
-
-}
-
-/* REMOVE LONG LINES */
-
-.line,
-.small-line{
-
-  display:none;
-
-}
-
-/* SKILL WRAPPER */
-
-.skill-wrapper{
-
-  width:100%;
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-
-}
-
-/* SKILL NODE */
-
-.skill-node{
-
-  width:100%;
-
-  max-width:160px;
-
-  text-align:center;
-
-  padding:12px 10px;
-
-  font-size:14px;
-
-  border-radius:40px;
-
-  background:#0f172a;
-
-  border:2px solid #38bdf8;
-
-  box-shadow:
-    0 0 15px rgba(56,189,248,0.25);
-
-}
-
-}
 }
