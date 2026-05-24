@@ -1105,80 +1105,101 @@ footer{
 
 @media(max-width:900px){
 
- /* MOBILE EDUCATION FIX */
+ /* MOBILE SKILLS FIX */
 
 @media(max-width:900px){
 
-  .journey-road::before{
+  .neural-network{
 
-    left:35px;
-
-    width:5px;
+    padding:60px 10px;
 
   }
 
-  .journey-item{
+  /* BRAIN */
+
+  .brain-circle{
+
+    width:140px;
+
+    height:140px;
+
+    font-size:65px;
+
+  }
+
+  .brain-area h3{
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+  }
+
+  /* SKILLS LAYOUT */
+
+  .skills-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px 20px;
 
     width:100%;
 
-    padding-left:90px !important;
-
-    padding-right:20px !important;
-
-    left:0 !important;
-
-    margin:60px 0;
+    margin-bottom:40px;
 
   }
 
-  /* CURVE FIX */
+  /* WRAPPER */
 
-  .journey-item.left::before,
-  .journey-item.right::before{
+  .skill-wrapper{
 
-    left:30px;
+    width:100%;
 
-    top:50%;
+    align-items:center;
 
-    width:45px;
+  }
+
+  /* LINE */
+
+  .line{
+
+    width:2px;
 
     height:45px;
 
-    border-top:5px dashed #38bdf8;
-
-    border-left:5px dashed #38bdf8;
-
-    border-right:none;
-
-    border-bottom:none;
-
-    border-radius:45px 0 0 0;
-
-    transform:translateY(-50%) rotate(-45deg);
+    margin-bottom:12px;
 
   }
 
-  /* DOT ALIGNMENT */
+  .small-line{
 
-  .location-dot{
-
-    left:25px !important;
-
-    width:18px;
-
-    height:18px;
+    height:35px;
 
   }
 
-  .journey-card{
+  /* NODE */
 
-    padding:25px;
+  .skill-node{
+
+    width:100%;
+
+    max-width:150px;
+
+    text-align:center;
+
+    padding:12px 10px;
+
+    font-size:14px;
 
   }
 
-  .journey-card h3{
+  /* REMOVE OVERFLOW */
 
-    font-size:22px;
+  body{
+
+    overflow-x:hidden;
 
   }
 
