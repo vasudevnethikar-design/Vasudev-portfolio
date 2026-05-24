@@ -1553,6 +1553,79 @@ footer{
     padding:20px;
 
   }
+  /* ================================= */
+/* MOBILE SKILLS SIMPLE VIEW */
+/* ================================= */
+
+.brain-area{
+
+  display:none;
+
+}
+
+/* SIMPLE GRID */
+
+.skills-row{
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:25px 15px;
+
+  width:100%;
+
+  margin-bottom:20px;
+
+}
+
+/* REMOVE LONG LINES */
+
+.line,
+.small-line{
+
+  display:none;
+
+}
+
+/* SKILL WRAPPER */
+
+.skill-wrapper{
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+}
+
+/* SKILL NODE */
+
+.skill-node{
+
+  width:100%;
+
+  max-width:160px;
+
+  text-align:center;
+
+  padding:12px 10px;
+
+  font-size:14px;
+
+  border-radius:40px;
+
+  background:#0f172a;
+
+  border:2px solid #38bdf8;
+
+  box-shadow:
+    0 0 15px rgba(56,189,248,0.25);
+
+}
 
 }
 }
